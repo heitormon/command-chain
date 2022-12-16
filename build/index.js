@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const hello_request_1 = require("./hello/internal/hello.request");
+const hello_response_1 = require("./hello/internal/hello.response");
+const hello_processor_1 = require("./hello/processor/hello.processor");
+const req = new hello_request_1.HelloRequest(1, 2);
+const res = new hello_response_1.HelloResponse();
+const processor = new hello_processor_1.HelloProcessor();
+processor.run(req, res);
+console.log(res);

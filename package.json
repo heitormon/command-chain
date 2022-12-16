@@ -1,0 +1,17 @@
+{
+  "name": "command-chain",
+  "version": "1.0.0",
+  "description": "Combine patterns chain and command",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/typescript/bin/tsc"
+  },
+  "author": "Heitor Nozu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "typescript": "^4.9.4"
+  }
+}
